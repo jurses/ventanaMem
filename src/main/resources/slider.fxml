@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox fx:id="root" prefHeight="272.0" prefWidth="366.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox fx:id="p1" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="Rojo" />
+            <Slider fx:id="sl_red" blockIncrement="0.01" max="1.0" onDragDetected="#red_sliding" />
+         </children>
+      </HBox>
+      <HBox fx:id="p2" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="Azul" />
+            <Slider fx:id="sl_blue" blockIncrement="0.01" max="1.0" onDragDetected="#blue_sliding" />
+         </children>
+      </HBox>
+      <HBox fx:id="p3" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="Verde" />
+            <Slider fx:id="sl_green" blockIncrement="0.01" max="1.0" onDragDetected="#green_sliding" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
