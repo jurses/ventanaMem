@@ -5,6 +5,8 @@ import java.io.IOException;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Slider;
+import javafx.scene.input.DragEvent;
+import javafx.scene.input.MouseDragEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -47,19 +49,19 @@ public class Controller {
     @FXML
     private Slider sl_green;
     
-    @FXML
-    void blue_sliding(MouseEvent event) {
-    	System.out.println(sl_blue.getValue());
+    public Slider get_red_slider()
+    {
+    	return sl_red;
     }
-
-    @FXML
-    void green_sliding(MouseEvent event) {
-
+    
+    public Slider get_blue_slider()
+    {
+    	return sl_blue;
     }
-
-    @FXML
-    void red_sliding(MouseEvent event) {
-
+    
+    public Slider get_green_slider()
+    {
+    	return sl_green;
     }
 
 }
